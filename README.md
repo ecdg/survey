@@ -1,2 +1,2 @@
 # Survey
-A survey for planning your European trip with your group, friends, and/or family.
+A survey to help you plan your Europe trip with your group, friends, and/or family.
