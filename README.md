@@ -1,5 +1,5 @@
 # Europe Travel Survey
-A survey to help you plan and decide the places to go to in your Europe trip with your group, friends, and/or family.
+A web app to help you plan and decide the places to go to in your Europe trip with your group, friends, and/or family. It has both a client-side and a server-side validation for the form's submission .
 
 
 * [Documentation](https://docs.cs50.net/2019/x/psets/7/survey/survey.html) for [Survey](https://github.com/emilyd17/survey/tree/master/survey)
