@@ -7,8 +7,8 @@ A survey to help you plan and decide the places to go to in your Europe trip wit
 ## View
 ![Form](https://github.com/emilyd17/survey/blob/master/survey/view/Form.jpg)
 
-
+##
 ![Form2](https://github.com/emilyd17/survey/blob/master/survey/view/Form2.jpg)
 
-
+##
 ![Sheet](https://github.com/emilyd17/survey/blob/master/survey/view/Sheet.jpg)
