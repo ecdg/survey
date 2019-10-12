@@ -1,0 +1,363 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+    <!-- http://getbootstrap.com/docs/4.1/content/typography/ -->
+    <h1 class="mb-3">Form</h1>
+
+    <!-- http://getbootstrap.com/docs/4.1/components/forms/ -->
+    <form action="/form" method="post">
+
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="firstname" placeholder="First Name" type="text"><br>
+            <input autocomplete="off" class="form-control" name="lastname" placeholder="Last Name" type="text">
+        </div>
+
+        <div class="form-group">
+            <p class="lead">Have you ever visited Europe?</p>
+            <div class="form-check">
+                <input class="form-check-input" id="Yes" name="visited" type="radio" value="Yes">
+                <label class="form-check-label" for="Yes">
+                    Yes
+                </label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" id="No" name="visited" type="radio" value="No">
+                <label class="form-check-label" for="No">
+                    No
+                </label>
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <p class="lead">Top country to visit in Europe</p>
+            <select class="form-control" name="country">
+                <option disabled selected value="">Country</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="Albania">Albania</option>
+                <option value="Andorra">Andorra</option>
+                <option value="Austria">Austria</option>
+                <option value="Belarus">Belarus</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                <option value="Bulgaria">Bulgaria</option>
+                <option value="Croatia">Croatia (Hrvatska)</option>
+                <option value="Cyprus">Cyprus</option>
+                <option value="Czech Republic">Czech Republic</option>
+                <option value="France">France</option>
+                <option value="Gibraltar">Gibraltar</option>
+                <option value="Germany">Germany</option>
+                <option value="Greece">Greece</option>
+                <option value="Vatican City State">Vatican City State</option>
+                <option value="Hungary">Hungary</option>
+                <option value="Italy">Italy</option>
+                <option value="Liechtenstein">Liechtenstein</option>
+                <option value="Luxembourg">Luxembourg</option>
+                <option value="Macedonia">Macedonia</option>
+                <option value="Malta">Malta</option>
+                <option value="Moldova">Moldova</option>
+                <option value="Monaco">Monaco</option>
+                <option value="Montenegro">Montenegro</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="Poland">Poland</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Romania">Romania</option>
+                <option value="San Marino">San Marino</option>
+                <option value="Serbia">Serbia</option>
+                <option value="Slovakia">Slovakia</option>
+                <option value="Slovenia">Slovenia</option>
+                <option value="Spain">Spain</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Estonia">Estonia</option>
+                <option value="Faroe Islands">Faroe Islands</option>
+                <option value="Finland">Finland</option>
+                <option value="Greenland">Greenland</option>
+                <option value="Iceland">Iceland</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Latvia">Latvia</option>
+                <option value="Lithuania">Lithuania</option>
+                <option value="Norway">Norway</option>
+                <option value="Svalbard and Jan Mayen Islands">Svalbard and Jan Mayen Islands</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Turkey">Turkey</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p class="lead">Top 7 cities to visit in Europe</p>
+                <div class="form-check">
+                    <input class="form-check-input" id="Amalfi" name="city" type="checkbox" value="Amalfi">
+                    <label class="form-check-label" for="Amalfi">
+                        Amalfi, Italy
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" id="Amsterdam" name="city" type="checkbox" value="Amsterdam">
+                    <label class="form-check-label" for="Amsterdam">
+                        Amsterdam, Netherlands
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" id="Athens" name="city" type="checkbox" value="Athens">
+                    <label class="form-check-label" for="Athens">
+                        Athens, Greece
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" id="Barcelona" name="city" type="checkbox" value="Barcelona">
+                    <label class="form-check-label" for="Barcelona">
+                        Barcelona, Spain
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" id="Bergen" name="city" type="checkbox" value="Bergen">
+                    <label class="form-check-label" for="Bergen">
+                        Bergen, Norway
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" id="Berlin" name="city" type="checkbox" value="Berlin">
+                    <label class="form-check-label" for="Berlin">
+                        Berlin, Germany
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" id="Bern" name="city" type="checkbox" value="Bern">
+                    <label class="form-check-label" for="Bern">
+                        Bern, Switzerland
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" id="Bologna" name="city" type="checkbox" value="Bologna">
+                    <label class="form-check-label" for="Bologna">
+                        Bologna, Italy
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" id="Brussels" name="city" type="checkbox" value="Brussels">
+                    <label class="form-check-label" for="Brussels">
+                        Brussels, Belgium
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" id="Budapest" name="city" type="checkbox" value="Budapest">
+                    <label class="form-check-label" for="Budapest">
+                        Budapest, Hungary
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" id="Dublin" name="city" type="checkbox" value="Dublin">
+                    <label class="form-check-label" for="Dublin">
+                        Dublin, Ireland
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" id="Edinburgh" name="city" type="checkbox" value="Edinburgh">
+                    <label class="form-check-label" for="Edinburgh">
+                        Edinburgh, Scotland
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" id="Florence" name="city" type="checkbox" value="Florence">
+                    <label class="form-check-label" for="Florence">
+                        Florence, Italy
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" id="Istanbul" name="city" type="checkbox" value="Istanbul">
+                    <label class="form-check-label" for="Istanbul">
+                        Istanbul, Turkey
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" id="Krakow" name="city" type="checkbox" value="Kraków">
+                    <label class="form-check-label" for="Krakow">
+                        Kraków, Poland
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" id="Lisbon" name="city" type="checkbox" value="Lisbon">
+                    <label class="form-check-label" for="Lisbon">
+                        Lisbon, Portugal
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" id="London" name="city" type="checkbox" value="London">
+                    <label class="form-check-label" for="London">
+                        London, England
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" id="Lucerne" name="city" type="checkbox" value="Lucerne">
+                    <label class="form-check-label" for="Lucerne">
+                        Lucerne, Switzerland
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" id="Madrid" name="city" type="checkbox" value="Madrid">
+                    <label class="form-check-label" for="Madrid">
+                        Madrid, Spain
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" id="Munich" name="city" type="checkbox" value="Munich">
+                    <label class="form-check-label" for="Munich">
+                        Munich, Germany
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" id="Moscow" name="city" type="checkbox" value="Moscow">
+                    <label class="form-check-label" for="Moscow">
+                        Moscow, Russia
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" id="Nice" name="city" type="checkbox" value="Nice">
+                    <label class="form-check-label" for="Nice">
+                        Nice, France
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" id="Oia" name="city" type="checkbox" value="Oia">
+                    <label class="form-check-label" for="Oia">
+                        Oia, Santorini
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" id="Paris" name="city" type="checkbox" value="Paris">
+                    <label class="form-check-label" for="Paris">
+                        Paris, France
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" id="Porto" name="city" type="checkbox" value="Porto">
+                    <label class="form-check-label" for="Porto">
+                        Porto, Portugal
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" id="Prague" name="city" type="checkbox" value="Prague">
+                    <label class="form-check-label" for="Prague">
+                        Prague, Czech Republic
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" id="Salzburg" name="city" type="checkbox" value="Salzburg">
+                    <label class="form-check-label" for="Salzburg">
+                        Salzburg, Austria
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" id="SanMarino" name="city" type="checkbox" value="San Marino">
+                    <label class="form-check-label" for="SanMarino">
+                        San Marino, Republic of San Marino
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" id="SanSebastian" name="city" type="checkbox" value="San Sebastian">
+                    <label class="form-check-label" for="SanSebastian">
+                        San Sebastián, Spain
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" id="Seville" name="city" type="checkbox" value="Seville">
+                    <label class="form-check-label" for="Seville">
+                        Seville, Spain
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" id="Siena" name="city" type="checkbox" value="Siena">
+                    <label class="form-check-label" for="Siena">
+                        Siena, Italy
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" id="Venice" name="city" type="checkbox" value="Venice">
+                    <label class="form-check-label" for="Venice">
+                        Venice, Italy
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" id="Vienna" name="city" type="checkbox" value="Vienna">
+                    <label class="form-check-label" for="Vienna">
+                        Vienna, Austria
+                    </label>
+                </div>
+
+        </div>
+
+        <!-- http://getbootstrap.com/docs/4.1/components/buttons/ -->
+        <button class="btn btn-primary" type="submit">Submit</button>
+
+    </form>
+
+    <script>
+
+        // Validate submission
+        document.querySelector('form').onsubmit = function() {
+            if(!document.querySelector('input[name="firstname"]').value) {
+                alert('You must provide your first name!');
+                return false;
+            }
+            else if(!document.querySelector('input[name="lastname"]').value) {
+                alert('You must provide your last name!');
+                return false;
+            }
+            else if(!document.querySelector('input[name="visited"]:checked')) {
+                alert('You must answer the "yes" or "no" question!');
+                return false;
+            }
+            else if(!document.querySelector('select').value) {
+                alert('You must select a country!');
+                return false;
+            }
+            else if(document.querySelector('input[name="city"]:checked').length < 7) {
+                alert('You must check 7 boxes!');
+                return false;
+            }
+            else if(document.querySelector('input[name="city"]:checked').length > 7) {
+                alert('You must only check 7 boxes!');
+                return false;
+            }
+            return true;
+        };
+
+    </script>
+
+{% endblock %}

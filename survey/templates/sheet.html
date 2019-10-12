@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <!-- http://getbootstrap.com/docs/4.1/content/typography/ -->
+    <h1 class="mb-3">Sheet</h1>
+    <table id="aTable" class="table table-striped table-bordered" style="width:100%">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Visited Europe</th>
+                <th scope="col">Top Country to Visit in Europe</th>
+                <th scope="col">Top Cities to Visit in Europe</th>
+            </tr>
+        </thead>
+         <tbody>
+            {% for entry in entries %}
+            <tr>
+                {% for col in entry %}
+                <td> {{col}} </td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <!--https://datatables.net/reference/option/-->
+    <script>
+    $(document).ready( function () {
+        $('#aTable').DataTable({
+        paging: false,
+        lengthChange: false,
+        info: false,
+        ordering: true
+        });
+    } );
+    </script>
+{% endblock %}
