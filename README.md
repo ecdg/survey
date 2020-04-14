@@ -14,15 +14,18 @@ A web app that helps you decide the places to go to in your Europe trip with you
 ![Sheet](https://github.com/emilyd17/survey/blob/master/survey/view/Sheet.jpg)
 
 ## Input Validation (client-side and server-side)
-when
+When user does not provide a first name:
 ![InputValidation1](https://github.com/emilyd17/survey/blob/master/survey/view/InputValidation1.png)
 
 ##
+When user does not provide a last name:
 ![InputValidation2](https://github.com/emilyd17/survey/blob/master/survey/view/InputValidation2.png)
 
 ##
+When user selects less than 7 checkboxes:
 ![InputValidation3](https://github.com/emilyd17/survey/blob/master/survey/view/InputValidation3.png)
 
 ##
+When user selects more than 7 checkboxes:
 ![InputValidation4](https://github.com/emilyd17/survey/blob/master/survey/view/InputValidation4.png)
 
