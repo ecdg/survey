@@ -14,6 +14,7 @@ A web app that helps you decide the places to go to in your Europe trip with you
 ![Sheet](https://github.com/emilyd17/survey/blob/master/survey/view/Sheet.jpg)
 
 ## Input Validation (client-side and server-side)
+when
 ![InputValidation1](https://github.com/emilyd17/survey/blob/master/survey/view/InputValidation1.png)
 
 ##
