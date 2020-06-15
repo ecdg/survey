@@ -13,7 +13,7 @@ A web app that helps you decide the places to go to in your Europe trip with you
 ##
 ![Sheet](https://github.com/emilyd17/survey/blob/master/survey/view/Sheet.jpg)
 
-## Input Validation (client-side and server-side)
+## Input Validation (client-side and server-side) demo
 When user does not provide a first name:
 ![InputValidation1](https://github.com/emilyd17/survey/blob/master/survey/view/InputValidation1.png)
 
